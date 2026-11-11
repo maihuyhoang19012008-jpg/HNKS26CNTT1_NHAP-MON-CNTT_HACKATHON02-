@@ -5,15 +5,15 @@
 
   
 
--  **Mã đề:** 01
+-  **Mã đề:** 05
 
--  **Họ tên:**
+-  **Họ tên:** MAI HUY HOÀNG 
 
--  **Lớp:**
+-  **Lớp:** CNTT1 
 
--  **Link repository:**
+-  **Link repository:** https://github.com/maihuyhoang19012008-jpg/HNKS26CNTT1_NHAP-MON-CNTT_HACKATHON02-
 
--  **Hệ điều hành (Windows/macOS):**
+-  **Hệ điều hành (Windows/macOS):** WIN
 
   
 
@@ -27,12 +27,12 @@
 
 ```shell
 pwd 
-cd DuAnHackathon 
+cd thue-do-cam-trai-website 
 mkdir logs, evidence, data New-Item .env, .env.example, .gitignore, README.md 
 -ItemType File 
 Get-ChildItem
 dir -Force
-copy data\dat_san_thang_10.xlsx \backup
+copy data\_5.xlsx \backup
 Remove-Item \*.tmp
 `Set-Location logs``Get-ChildItem -Force``Set-Location \`
   
@@ -76,7 +76,8 @@ Select-String -Path .\logs\access.log -Pattern "status=500" | ForEach-Object { $
 ```text
 
 
-  
+  2026-05-28 08:17:12 POST /api/kho-do status=500
+2026-05-28 08:20:23 POST /api/thue-do status=500
 
 ```
 
@@ -91,8 +92,7 @@ Select-String -Path .\logs\access.log -Pattern "status=404").Count
 
 ```text
 
-(Dán kết quả đếm vào đây – xoá dòng này)
-
+4 
   
 
 ```
@@ -118,7 +118,6 @@ Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass .\tong_hop.ps1
 ```text
 Get-Content .\logs\tong_hop.txt
   
-
 ```
 
   
@@ -156,7 +155,7 @@ Get-Content .\logs\tong_hop.txt
 
 > Ảnh chụp màn hình lưu trong thư mục `evidence/` (network.png, console.png).
 
-  
+  !(console.jpg)[(console.1.png)]
 
 ### Báo cáo lỗi gửi trưởng nhóm
 
@@ -174,7 +173,6 @@ Get-Content .\logs\tong_hop.txt
 
 ```text
 
-(Ghi câu tìm kiếm vào đây – xoá dòng này)
 
   
 
