@@ -179,9 +179,4 @@ Get-Content .\logs\tong_hop.txt
 ```
 
   
-
-## 4.7. Excel
-
-  
-
-> Phần Excel được chấm trực tiếp trên file `data/dat_san_thang_10.xlsx`, không cần ghi vào đây.
+.
