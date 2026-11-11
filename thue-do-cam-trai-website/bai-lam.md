@@ -32,8 +32,8 @@ mkdir logs, evidence, data New-Item .env, .env.example, .gitignore, README.md
 -ItemType File 
 Get-ChildItem
 dir -Force
-copy data\_5.xlsx \backup
-Remove-Item \*.tmp
+copy data\don-thue-thang_5.xlsx \backup
+Remove-Item \temp505.tmp
 `Set-Location logs``Get-ChildItem -Force``Set-Location \`
   
 
