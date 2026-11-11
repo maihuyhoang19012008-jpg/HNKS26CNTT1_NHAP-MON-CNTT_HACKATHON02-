@@ -27,13 +27,13 @@
 
 ```shell
 pwd 
-cd thue-do-cam-trai-website 
+cd thue-do-cam-trai-website
 mkdir logs, evidence, data New-Item .env, .env.example, .gitignore, README.md 
 -ItemType File 
 Get-ChildItem
 dir -Force
-copy data\don-thue-thang_5.xlsx \backup
-Remove-Item \temp505.tmp
+copy data\don_thue_thang_5.xlsx \backup
+Remove-Item \*.tmp
 `Set-Location logs``Get-ChildItem -Force``Set-Location \`
   
 
@@ -69,15 +69,13 @@ Select-String -Path .\logs\access.log -Pattern "status=500" | ForEach-Object { $
 
   
 
-### 2 dòng đầu tiên trong logs/loi_500.txt
+### 2 dòng đầu tiên trong logs/
 
-  
 
 ```text
-
-
-  2026-05-28 08:17:12 POST /api/kho-do status=500
+2026-05-28 08:17:12 POST /api/kho-do status=500
 2026-05-28 08:20:23 POST /api/thue-do status=500
+  
 
 ```
 
@@ -91,9 +89,8 @@ Select-String -Path .\logs\access.log -Pattern "status=404").Count
 ```
 
 ```text
+4
 
-4 
-  
 
 ```
 
@@ -118,6 +115,7 @@ Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass .\tong_hop.ps1
 ```text
 Get-Content .\logs\tong_hop.txt
   
+
 ```
 
   
@@ -173,10 +171,16 @@ Get-Content .\logs\tong_hop.txt
 
 ```text
 
+(Ghi câu tìm kiếm vào đây – xoá dòng này)
 
   
 
 ```
 
   
-.
+
+## 4.7. Excel
+
+  
+
+> Phần Excel được chấm trực tiếp trên file `data/dat_san_thang_10.xlsx`, không cần ghi vào đây.
